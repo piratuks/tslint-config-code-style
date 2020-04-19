@@ -1,3 +1,6 @@
+# Code Style
+Linter rules according to my preferred coding style.
+
 ## Install
 
 npm install --save-dev @piratuks/code-style-config
