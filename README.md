@@ -1,5 +1,5 @@
-# Code Style
-Linter rules according to my preferred coding style.
+# Code Style Config
+Linter rules according to my preferred coding style which are shareable.
 
 ## Install
 
