@@ -366,14 +366,14 @@
     "quote-props": ["error", "as-needed"],
     "quotes": [
       "error",
-      "single",
+      "double",
       {
         "avoidEscape": true,
         "allowTemplateLiterals": false
       }
     ],
     "rest-spread-spacing": ["error", "never"],
-    "semi": ["error", "never"],
+    "semi": ["error", "always"],
     "semi-spacing": [
       "error",
       {
