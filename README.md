@@ -1,3 +1,6 @@
+# Code Style Config
+Linter rules according to my preferred coding style which are shareable.
+
 ## Install
 
 npm install --save-dev @piratuks/code-style-config
@@ -17,5 +20,5 @@ In your `tslint.json` config file, add the following:
 In your `eslintrc.json` config file, add the following:
 
 ```json
-"extends": "@edcarroll/code-style/eslint"
+"extends": "@piratuks/code-style-config/eslint"
 ```
