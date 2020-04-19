@@ -10,13 +10,22 @@
     "es6": true,
     "node": true
   },
-  "plugins": ["import", "node", "promise", "standard"],
+  "plugins": ["import", "node", "promise", "standard", "prefer-arrow"],
   "globals": {
     "document": "readonly",
     "navigator": "readonly",
     "window": "readonly"
   },
   "rules": {
+    "prefer-arrow/prefer-arrow-functions": [
+      "error",
+      {
+        "disallowPrototype": true,
+        "singleReturnOnly": false,
+        "classPropertiesAllowed": false
+      }
+    ],
+    "no-duplicate-imports": "error",
     "accessor-pairs": "error",
     "array-bracket-spacing": ["error", "never"],
     "arrow-spacing": [
@@ -40,16 +49,7 @@
         "properties": "never"
       }
     ],
-    "comma-dangle": [
-      "error",
-      {
-        "arrays": "never",
-        "objects": "never",
-        "imports": "never",
-        "exports": "never",
-        "functions": "never"
-      }
-    ],
+    "func-style": ["error", "expression"],
     "comma-spacing": [
       "error",
       {
@@ -117,13 +117,14 @@
       {
         "require": {
           "FunctionDeclaration": true,
-          "MethodDefinition": false,
-          "ClassDeclaration": false,
-          "ArrowFunctionExpression": false,
-          "FunctionExpression": false
+          "MethodDefinition": true,
+          "ClassDeclaration": true,
+          "ArrowFunctionExpression": true,
+          "FunctionExpression": true
         }
       }
     ],
+    "no-var": "error",
     "valid-jsdoc": [
       "error",
       {
@@ -300,12 +301,13 @@
         "ignoreRestSiblings": true
       }
     ],
+    "no-shadow": "error",
     "no-use-before-define": [
       "error",
       {
-        "functions": false,
-        "classes": false,
-        "variables": false
+        "functions": true,
+        "classes": true,
+        "variables": true
       }
     ],
     "no-useless-call": "error",
@@ -382,7 +384,6 @@
       }
     ],
     "space-before-blocks": ["error", "always"],
-    "space-before-function-paren": ["error", "always"],
     "space-in-parens": ["error", "never"],
     "space-infix-ops": "error",
     "space-unary-ops": [
