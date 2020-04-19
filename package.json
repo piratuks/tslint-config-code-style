@@ -1,7 +1,7 @@
 {
   "name": "@piratuks/code-style-config",
   "description": "Preferred TSlint / ESLint Shareable Config",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "author": {
     "name": "Evaldas Laureckas",
     "email": "evaldas.laureckas@gmail.com"
@@ -13,19 +13,19 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.1.5",
     "pretty-quick": "^2.0.1",
+    "tape": "^4.8.0",
     "codelyzer": "^5.2.2",
+    "tslint": "^5.4.3",
     "prettier": "^2.0.4",
-    "tslint": "^6.1.1",
     "tslint-config-prettier": "^1.18.0",
-    "tslint-eslint-rules": "^5.4.0",
+    "tslint-eslint-rules": "^4.1.1",
     "tslint-plugin-prettier": "^2.3.0",
-    "vrsource-tslint-rules": "^6.0.0",
-    "eslint": "^6.2.2",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "tape": "^4.8.0"
+    "vrsource-tslint-rules": "^5.1.0",
+    "eslint": ">=6.2.2",
+    "eslint-plugin-import": ">=2.18.0",
+    "eslint-plugin-node": ">=9.1.0",
+    "eslint-plugin-promise": ">=4.2.1",
+    "eslint-plugin-standard": ">=4.0.0"
   },
   "homepage": "https://github.com/piratuks/code-style-config",
   "keywords": [
@@ -36,12 +36,12 @@
   "main": "index.js",
   "peerDependencies": {
     "codelyzer": "^5.2.2",
+    "tslint": "^5.4.3",
     "prettier": "^2.0.4",
-    "tslint": "^6.1.1",
     "tslint-config-prettier": "^1.18.0",
-    "tslint-eslint-rules": "^5.4.0",
+    "tslint-eslint-rules": "^4.1.1",
     "tslint-plugin-prettier": "^2.3.0",
-    "vrsource-tslint-rules": "^6.0.0",
+    "vrsource-tslint-rules": "^5.1.0",
     "eslint": ">=6.2.2",
     "eslint-plugin-import": ">=2.18.0",
     "eslint-plugin-node": ">=9.1.0",
