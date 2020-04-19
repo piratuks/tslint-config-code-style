@@ -4,6 +4,7 @@ Linter rules according to my preferred coding style which are shareable.
 ## Install
 
 npm install --save-dev @piratuks/code-style-config
+https://www.npmjs.com/package/@piratuks/code-style-config
 
 ## Usage
 
