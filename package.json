@@ -1,0 +1,72 @@
+{
+  "name": "@piratuks/code-style-config",
+  "description": "Preferred TSlint / ESLint Shareable Config",
+  "version": "1.0.0",
+  "author": {
+    "name": "Evaldas Laureckas",
+    "email": "evaldas.laureckas@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/piratuks/code-style-config/issues"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.5",
+    "pretty-quick": "^2.0.1",
+    "codelyzer": "^5.2.2",
+    "prettier": "^2.0.4",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-plugin-prettier": "^2.3.0",
+    "vrsource-tslint-rules": "^6.0.0",
+    "eslint": "^6.2.2",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "tape": "^4.8.0"
+  },
+  "homepage": "https://github.com/piratuks/code-style-config",
+  "keywords": [
+    "eslint rules",
+    "tslint rules"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "codelyzer": "^5.2.2",
+    "prettier": "^2.0.4",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-plugin-prettier": "^2.3.0",
+    "vrsource-tslint-rules": "^6.0.0",
+    "eslint": ">=6.2.2",
+    "eslint-plugin-import": ">=2.18.0",
+    "eslint-plugin-node": ">=9.1.0",
+    "eslint-plugin-promise": ">=4.2.1",
+    "eslint-plugin-standard": ">=4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/piratuks/code-style-config.git"
+  },
+  "scripts": {
+    "lint": "eslint . --config=eslintrc.json",
+    "test": "npm run lint && tape test/*.js",
+    "precommit": "eslint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged&&lint-staged&&npm run lint -- --fix"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "tslint --fix --project .",
+      "git add"
+    ]
+  },
+  "dependencies": {}
+}
