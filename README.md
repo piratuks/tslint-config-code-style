@@ -20,5 +20,5 @@ In your `tslint.json` config file, add the following:
 In your `eslintrc.json` config file, add the following:
 
 ```json
-"extends": "@edcarroll/code-style/eslint"
+"extends": "@piratuks/code-style-config/eslint"
 ```
