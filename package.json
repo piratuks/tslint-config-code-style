@@ -1,22 +1,16 @@
 {
-  "name": "@piratuks/code-style-config",
-  "description": "Preferred TSlint / ESLint Shareable Config",
-  "version": "1.0.8",
+  "name": "@piratuks/tslint-config-code-style",
+  "description": "Preferred TSlint Shareable Config",
+  "version": "1.0.9",
   "author": {
     "name": "Evaldas Laureckas",
     "email": "evaldas.laureckas@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/piratuks/code-style-config/issues"
+    "url": "https://github.com/piratuks/tslint-config-code-style/issues"
   },
   "devDependencies": {
     "codelyzer": "^5.2.2",
-    "eslint": ">=6.2.2",
-    "eslint-plugin-import": ">=2.18.0",
-    "eslint-plugin-node": ">=9.1.0",
-    "eslint-plugin-prefer-arrow": "^1.2.0",
-    "eslint-plugin-promise": ">=4.2.1",
-    "eslint-plugin-standard": ">=4.0.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.5",
     "prettier": "^2.0.4",
@@ -28,9 +22,8 @@
     "tslint-plugin-prettier": "^2.3.0",
     "vrsource-tslint-rules": "^5.1.0"
   },
-  "homepage": "https://github.com/piratuks/code-style-config",
+  "homepage": "https://github.com/piratuks/tslint-config-code-style",
   "keywords": [
-    "eslint rules",
     "tslint rules"
   ],
   "license": "MIT",
@@ -42,31 +35,22 @@
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^4.1.1",
     "tslint-plugin-prettier": "^2.3.0",
-    "vrsource-tslint-rules": "^5.1.0",
-    "eslint": ">=6.2.2",
-    "eslint-plugin-prefer-arrow": "^1.2.0",
-    "eslint-plugin-import": ">=2.18.0",
-    "eslint-plugin-node": ">=9.1.0",
-    "eslint-plugin-promise": ">=4.2.1",
-    "eslint-plugin-standard": ">=4.0.0"
+    "vrsource-tslint-rules": "^5.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/piratuks/code-style-config.git"
+    "url": "git://github.com/piratuks/tslint-config-code-style.git"
   },
   "scripts": {
-    "lint": "eslint . --config=eslintrc.json",
-    "test": "npm run lint && tape test/*.js",
     "precommit": "eslint-staged"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged&&lint-staged&&npm run lint -- --fix"
+      "pre-commit": "pretty-quick --staged&&lint-staged"
     }
   },
   "lint-staged": {
     "*.ts": [
-      "tslint --fix --project .",
       "git add"
     ]
   },

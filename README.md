@@ -1,10 +1,11 @@
-# Code Style Config
-Linter rules according to my preferred coding style which are shareable.
+# TSLint Config Code Style
+
+TSLint rules according to my preferred coding style which are shareable.
 
 ## Install
 
-npm install --save-dev @piratuks/code-style-config <br />
-https://www.npmjs.com/package/@piratuks/code-style-config
+npm install --save-dev @piratuks/tslint-config-code-style <br />
+https://www.npmjs.com/package/@piratuks/tslint-config-code-style
 
 ## Usage
 
@@ -13,13 +14,5 @@ https://www.npmjs.com/package/@piratuks/code-style-config
 In your `tslint.json` config file, add the following:
 
 ```json
-"extends": "@piratuks/code-style-config/tslint"
-```
-
-### eslint
-
-In your `eslintrc.json` config file, add the following:
-
-```json
-"extends": "@piratuks/code-style-config/eslint"
+"extends": "@piratuks/tslint-config-code-style"
 ```
