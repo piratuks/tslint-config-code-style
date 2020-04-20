@@ -1,7 +1,7 @@
 {
   "name": "@piratuks/tslint-config-code-style",
   "description": "Preferred TSlint Shareable Config",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "author": {
     "name": "Evaldas Laureckas",
     "email": "evaldas.laureckas@gmail.com"
