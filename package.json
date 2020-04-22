@@ -1,7 +1,7 @@
 {
   "name": "@piratuks/tslint-config-code-style",
   "description": "Preferred TSlint Shareable Config",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "author": {
     "name": "Evaldas Laureckas",
     "email": "evaldas.laureckas@gmail.com"
@@ -15,7 +15,6 @@
     "lint-staged": "^10.1.5",
     "prettier": "^2.0.4",
     "pretty-quick": "^2.0.1",
-    "tape": "^4.8.0",
     "tslint": "^5.4.3",
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^4.1.1",
@@ -24,7 +23,12 @@
   },
   "homepage": "https://github.com/piratuks/tslint-config-code-style",
   "keywords": [
-    "tslint rules"
+    "tslint rules",
+    "tslint",
+    "rules",
+    "shareable config",
+    "shareable ",
+    "config"
   ],
   "license": "MIT",
   "main": "index.js",
